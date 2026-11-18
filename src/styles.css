@@ -558,3 +558,17 @@ footer > span {
     transition-duration: 0.01ms !important;
   }
 }
+/* Three.js Globe */
+
+.globe-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.globe-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: pan-y;
+}

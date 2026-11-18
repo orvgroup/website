@@ -9,7 +9,7 @@ import {
   Code2,
   Layers3
 } from 'lucide-react'
-
+import Globe from './three/Globe'
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -95,17 +95,14 @@ function App() {
           </div>
         </div>
 
-        <div className="hero-visual">
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
-          <div className="planet">
-            <div className="planet-shine" />
-          </div>
-          <div className="planet-label">
-            <Globe2 size={15} />
-            DIGITAL UNIVERSE
-          </div>
-        </div>
+       <div className="hero-visual">
+  <Globe />
+
+  <div className="planet-label">
+    <Globe2 size={15} />
+    DIGITAL UNIVERSE
+  </div>
+</div>
 
         <div className="scroll-indicator">
           <span /> SCROLL TO EXPLORE
